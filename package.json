@@ -1,0 +1,25 @@
+{
+  "name": "html-colors",
+  "version": "0.0.1",
+  "description": "Allows manipulating and converting color used in html docs. Accepts hex, rgb and hsl formats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\\\\\"Error: no test specified\\\\\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CABrouwers/html-colors.git"
+  },
+  "keywords": [
+    "color",
+    "rgb",
+    "hsl",
+  ],
+  "author": "CABrouwers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CABrouwers/html-colors/issues"
+  },
+  "homepage": "https://github.com/CABrouwers/html-colors#readme",
+  "dependencies": {}
+}
