@@ -1,5 +1,5 @@
 {
-  "name": "html-colors",
+  "name": "html-colors-manip",
   "version": "0.0.2",
   "description": "Allows manipulating and converting color used in html docs. Accepts hex, rgb and hsl formats",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CABrouwers/html-colors.git"
+    "url": "https://github.com/CABrouwers/html-colors-manip.git"
   },
   "keywords": [
     "color",
@@ -19,8 +19,8 @@
   "author": "CABrouwers",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CABrouwers/html-colors/issues"
+    "url": "https://github.com/CABrouwers/html-colors-manip/issues"
   },
-  "homepage": "https://github.com/CABrouwers/html-colors#readme",
+  "homepage": "https://github.com/CABrouwers/html-colors-manip#readme",
   "dependencies": {}
 }
