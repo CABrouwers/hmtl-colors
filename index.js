@@ -449,13 +449,11 @@ class SVG {
     }
 
     get orderedHex() {
-    if(!this._orderHex) {
-        console.debug("there")
-        this._OrderHex = Object.entries(this.colors).sort((x, y) => { return x[1].ordinal - y[1].ordinal }).map(x => { return x[0] })
+        if (!this._orderedHex) {
+            this._orderedHex = Object.entries(this.colors).sort((x, y) => { return x[1].ordinal - y[1].ordinal }).map(x => { return x[0] })
+        }
+        return this._orderedHex
     }
-    console.debug("now")
-    return this._OrderHex
-  }
 
 }
 
