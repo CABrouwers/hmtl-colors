@@ -92,7 +92,7 @@ function txt2Triad(txt, basis = 255) {
             return undefined
         }
     }
-    numReg.lastIndex = 0
+    numRegGlob.lastIndex = 0
     return [getNum(numRegGlob.exec(txt)), getNum(numRegGlob.exec(txt)), getNum(numRegGlob.exec(txt))]
 }
 
@@ -356,6 +356,13 @@ class Color {
 
     }
 
+    get ordinal() {
+        if (!this._ordinal) {
+            this.__ordinal = ((this.h + 30) % 360) * 10000 + this.l * 100 + this.s
+        }
+        return this.__ordinal
+    }
+
 }
 
 
@@ -441,6 +448,15 @@ class SVG {
         return new SVG(tmpText)
     }
 
+    get orderHex()
+    if(!this._orderHex) {
+        console.debug("there")
+        this._OrderHex = Object.entries(this.colors).sort((x, y) => { return x[1].ordinal - y[1].ordinal }).map(x => { return x[0] })
+    }
+    console.debug("now")
+    return this._OrderHex
+  }
+
 }
 
 
@@ -504,12 +520,4 @@ class ColorMap {
 
 
 
-
-
-try {
-    module.exports = { Color, SVG, ColorMap }
-}
-catch (e) { }
-
-
-
+module.exports = { Color, SVG, ColorMap }

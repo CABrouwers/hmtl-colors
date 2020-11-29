@@ -1,6 +1,6 @@
 {
   "name": "html-colors-manip",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Allows manipulating and converting color used in html docs. Accepts hex, rgb and hsl formats",
   "main": "index.js",
   "scripts": {
