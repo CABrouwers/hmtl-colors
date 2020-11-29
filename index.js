@@ -455,6 +455,8 @@ class SVG {
         return this._orderedHex
     }
 
+    version() {return "0.0.8"}
+    
 }
 
 
@@ -516,6 +518,9 @@ class ColorMap {
 
 
 
+try {
+    module.exports = { Color, SVG, ColorMap }
+}
+catch (e) { }
 
 
-module.exports = { Color, SVG, ColorMap }
